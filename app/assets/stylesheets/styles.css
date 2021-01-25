@@ -1,0 +1,25 @@
+.banner {
+ object-position: center;
+ background-color: #1468C6;
+ font-size: 50px;
+ font-color: #FEFEFD;
+ text-align: center;
+}
+
+ h1 {
+  font-size: 50px;
+  text-color: #FEFEFD;
+  text-align: center;
+ }
+
+.firsform {
+  padding-left: 50px;
+  margin-left: 20px;
+  object-position: center;
+  text-align: left;
+}
+
+.secondform {
+  margin-left: 20px;
+  text-align: center;
+}

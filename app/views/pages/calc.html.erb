@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="firstform">
+      <form action='/calc' method='get'>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <input type="text" name="input" placeholder="Type a number">
+        <button type="submit">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="secondform">
+    <% if @answer %>
+    <p>Number of Prime numbers below <%= "#{params[:input]}: #{@answer.count}" %></p>
+      <ul>
+        <% @answer.each do |p| %>
+        <li>
+          <%= p %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <% else %>
+    <q>A circular prime is a prime number with the property that the number generated at each intermediate step when cyclically permuting its (base 10) digits will be prime</q>
+    <% end %>
+  </div>
+</div>
+</div>
